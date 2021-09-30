@@ -38,7 +38,7 @@ Miner Node
 
 #### Types of Blockchain
 Public Blockchain
-- Anyone can be a node in public network and submit transactions
+- Anyone can be a node in a public network and submit transactions
 - Example: $BTC, $ETH
 
 Private Blockchain
@@ -46,20 +46,20 @@ Private Blockchain
 - private in scope and limited to defined users.
 - Example: Ethereum, Polygon
 
-Permisionless Blockchain
+Permissionless Blockchain
 - Anyone can process transactions
 
 Permissioned Blockchain
-- Only approved nodes(also referred as users) can process transaction
+- Only approved nodes(also referred as users) can process the transaction
 
 
 ## Lecture 3 - 12th August
 #### Ethereum
-- Blockchain based computing platform
+- Blockchain-based computing platform
 
 This includes three things
-- Gas : Price per operation
-- Nonce : Random number a mining algorithm uses to effect outcome of hashing algorithm
+- Gas: Price per operation
+- Nonce: Random number a mining algorithm uses to affect outcome of hashing algorithm
 - Difficulty
 
 #### Accounts in Ethereum
@@ -84,7 +84,38 @@ This includes three things
 
 
 
+## Lecture 4 - 13th August
+- Create directory called Ethereum - mkdir ethereum
+- Create an environment var called ethereum_home
+export VARIABLE_NAME=Path of folder
+{export ETHEREUM_HOME=/path}
+export ETHEREUM_HOME=/Users/abhinav/ethereum
+- check environment variables
+printenv
+- Create a file genesis.json in your ethereum_home directory
 
 
+- To init your first ethereum node:
 
+```geth --datadir “$ethereum_home/NUclass” init “<ethereumdir>/genesis.json” [**run once only**]```\
+```geth --datadir ”$ethereum_home/NUclass” console 2>console.log```\
+```admin. [tab key] to view all options possible with the admin command```\
+```admin.nodeInfo - observe the default port and the enode id```\
+```personal. [tab key]```\
+```personal.newAccount() to create a new account```
+
+- Operations
+
+
+```personal.listAccounts() to list accounts```\
+```eth. [tab key]```\
+```eth.blockNumber should return 0 since we are yet to create our first block```\
+
+Create a 2nd node:
+```geth --datadir “$ethereum_home/Nuclass-node2” init “<ethereumdir>/genesis.json” [**run once only**]```\
+
+```geth --datadir ”$ethereum_home/Nuclass-node2” --port 30304 --nodiscover -- networkid 1234 console 2>console.log```
+[**different port number – also, need to restart first node with same networkid**]
+
+(**On Windows, add --ipcdisable, if you get access denied**)
 
