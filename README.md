@@ -58,8 +58,8 @@ Permissioned Blockchain
 - Blockchain based computing platform
 
 This includes three things
-- Gas
-- Nonce
+- Gas : Price per operation
+- Nonce : Random number a mining algorithm uses to effect outcome of hashing algorithm
 - Difficulty
 
 #### Accounts in Ethereum
@@ -74,6 +74,13 @@ This includes three things
 - Digital currency used by Ethereum
 - 10^8 wei = 1 ether
 
+#### Smart Contracts
+- Programmatic definition of business rules for 2 or more entities to transact with each other
+- Written and deployed on blockchain framework.
+
+#### DApps
+- Code running on decentralized p2p network.
+- DApps = UI + Smart Contracts
 
 
 
