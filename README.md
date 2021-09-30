@@ -33,7 +33,7 @@ Miner Node
 - Extremely powerful hardware
 - Can take multiple transactions, create a hash that meets blockchain's difficulty level
 - somebody takes group of transactions and create a valid hash for it.
-- Once such block is accpeted in blockchain, Miner gets his fees.
+- Once such block is accepted in blockchain, Miner gets his fees.
 
 
 #### Types of Blockchain
@@ -53,9 +53,26 @@ Permissioned Blockchain
 - Only approved nodes(also referred as users) can process transaction
 
 
+## Lecture 3 - 12th August
+#### Ethereum
+- Blockchain based computing platform
 
+This includes three things
+- Gas
+- Nonce
+- Difficulty
 
+#### Accounts in Ethereum
+- User accounts
+- Contracts
 
+#### Nodes
+- Computers that are part of blockchain network
+- Miners are nodes that are willing to participate in transactions and creating a hash for it.
+
+#### Ether
+- Digital currency used by Ethereum
+- 10^8 wei = 1 ether
 
 
 
